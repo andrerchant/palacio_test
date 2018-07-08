@@ -5,14 +5,14 @@ module.exports = function(grunt){
     concat: {
       basic: {
         src: ['prod/less/*.less'],
-        dest: 'dev/assets/css/general.less',
+        dest: 'assets/css/general.less',
       },
     },
 
     less: {
       development: {
         files: {
-          'dev/assets/css/totalmente.css': 'dev/assets/css/general.less'
+          'assets/css/totalmente.css': 'assets/css/general.less'
         }
       },
     },
@@ -24,7 +24,7 @@ module.exports = function(grunt){
       },
       target: {
         files: {
-          'dev/assets/css/totalmente.min.css': ['dev/assets/css/totalmente.css']
+          'assets/css/totalmente.min.css': ['assets/css/totalmente.css']
         }
       }
     },
