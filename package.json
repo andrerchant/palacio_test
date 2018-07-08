@@ -1,0 +1,28 @@
+{
+  "name": "palacio",
+  "version": "1.0.0",
+  "description": "Prueba para ingreso a palacio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrerchant/palacio_test.git"
+  },
+  "author": "Andre Merchant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrerchant/palacio_test/issues"
+  },
+  "homepage": "https://github.com/andrerchant/palacio_test#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "material-design-icons": "^3.0.1"
+  }
+}
