@@ -34,9 +34,9 @@ module.exports = function(grunt){
       css: {
         files: 'prod/less/*.less',
         tasks: ['cocinando'],
-        // options: {
-        //   livereload: true,
-        // },
+        options: {
+          livereload: true,
+        },
       },
     },
 
@@ -56,6 +56,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.registerTask('default', 'watch:css');
   grunt.registerTask('cocinando', ['concat','less','cssmin']);
 
 };
