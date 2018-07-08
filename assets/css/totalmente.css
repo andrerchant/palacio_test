@@ -3,15 +3,23 @@ header {
   border: 1px solid #cf3e26;
   color: white;
   text-align: center;
+  padding: 1rem;
+}
+@font-face {
+  font-family: 'hussar';
+  src: url('../font/arctik_2-webfont.woff2') format('woff2'), url('../font/arctik_2-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
 }
 body {
   margin: 0;
   padding: 0;
   border: 0;
   background-color: #f2f2f2;
+  font-family: 'hussar';
 }
 body h4 {
-  color: green;
+  color: #cf3e26;
 }
 .box {
   background-color: white;

@@ -30,15 +30,15 @@ module.exports = function(grunt){
     },
 
 
-    watch: {
-      css: {
-        files: 'prod/less/*.less',
-        tasks: ['cocinando'],
-        options: {
-          livereload: true,
-        },
-      },
-    },
+    // watch: {
+    //   css: {
+    //     files: 'prod/less/*.less',
+    //     tasks: ['cocinando'],
+    //     options: {
+    //       livereload: true,
+    //     },
+    //   },
+    // },
 
     // uglify: {
     //     my_target: {
@@ -56,7 +56,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', 'watch:css');
-  grunt.registerTask('cocinando', ['concat','less','cssmin']);
+  grunt.registerTask('default', ['concat','less','cssmin']);
 
 };
