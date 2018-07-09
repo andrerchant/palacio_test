@@ -29,16 +29,16 @@ module.exports = function(grunt){
       }
     },
 
+    watch: {
+      scripts: {
+        files: ['prod/less/*.less'],
+        tasks: ['default'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
 
-    // watch: {
-    //   css: {
-    //     files: 'prod/less/*.less',
-    //     tasks: ['cocinando'],
-    //     options: {
-    //       livereload: true,
-    //     },
-    //   },
-    // },
 
     // uglify: {
     //     my_target: {
@@ -57,5 +57,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['concat','less','cssmin']);
+  grunt.registerTask('observar', ['watch:scripts']);
 
 };
