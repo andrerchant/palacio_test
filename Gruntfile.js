@@ -37,22 +37,12 @@ module.exports = function(grunt){
           spawn: false,
         },
       },
-    },
-
-
-    // uglify: {
-    //     my_target: {
-    //       files: {
-    //         'css/totalmente.min.css': ['css/totalmente.css']
-    //       }
-    //     }
-    //   }
+    },    
 
   });
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
