@@ -1,4 +1,4 @@
-# palacio_test
+# Palacio_test
 Prueba de desarrollo
 
 URL de la prueba:
@@ -7,7 +7,7 @@ http://clientes.zerendipia.com/palacio_test01/
 Incluye lista modificable de productos.
 
 {
-  nombre:'Nombre del producto',
+  nombre:'Nombre del producto',<br>
   fabricante:'PROVEEDOR',
   img:'path/to/imagen_almacenada',
   calmacen:'clave67inventada156',
