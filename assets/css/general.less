@@ -1,3 +1,87 @@
+.btn-h-plank{
+  border: .1rem solid #eee;
+  border-radius: .2rem;
+  box-shadow: 0px 2px 1px 0px rgba(0,0,0,.1);
+}
+
+.box {
+  background-color: #fff;
+  margin: .5rem .3rem;
+  padding: .5rem;
+  position: relative;
+  strong{
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+  }
+  .title_strong{
+    font-size: .8rem;
+  }
+  figure,.description,.preciador{
+    display: inline-block;
+    vertical-align: top;
+    small{
+      color: gray;
+    }
+    .codigo{
+      text-transform: uppercase;
+    }
+    input{
+      border-radius: 9px;
+      border: 1px solid silver;
+      padding: .2rem;
+      width: 2rem;
+    }
+  }
+  .preciador{
+    position: absolute;
+    right: .3rem;
+    text-align: right;
+    *{
+      display: block;
+    }
+    .antes{
+      color: rgb(115,115,115);
+      display: none;
+      text-decoration: line-through;
+      font-size: .8rem;
+      font-weight: 100;
+    }
+    .disp{
+      color: #78dc99;
+      display: none;
+      font-size: .65rem;
+      font-weight: 100;
+    }
+  }
+  .generic-icon{
+    display: inline-block;
+    text-align: center;
+    width: 3rem;
+  }
+
+}
+
+ .btn-h-plank > p,.btn-h-plank > div{
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+ .ticket-general{
+   padding: .4rem .4rem;
+   position: relative;
+   .custom-row{
+     text-align: left;
+     margin:.3rem;
+   }
+   span{
+     position: absolute;
+     right: .4rem;
+   }
+   .title_strong{
+     display: inline-block;
+   }
+ }
+
 header{
   background-color: black;
   border:1px solid @ladrillo;
@@ -5,9 +89,29 @@ header{
   text-align: center;
   padding: 1rem;
 }
+.s1{
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .figure,.generic-icon{
+    position: absolute;
+    top: .8rem;
+  }
+  .figure{
+    left: .4rem;
+  }
+  .generic-icon{
+    right: .2rem;
+  }
+}
 
 @ladrillo: #cf3e26;
 @azulejo: darkcyan;
+@gris-generico: #f4f4f4;
 
 @font-face {
     font-family: 'acherus';
@@ -21,31 +125,53 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: #f4f4f4;
+  background-color: @gris-generico;
   font-family: 'acherus';
-  h4{
-    color:@ladrillo;
-  }
-  hr{
-    border-color: #f7f7f7;
-  }
-  .title_strong{
+  h1,.title_strong{
+    font-weight: 600;
     text-transform: uppercase;
     text-rendering: geometricPrecision;
-    font-weight: 600;
   }
+  h1{
+    text-align: center;
+    font-size: initial;
+  }
+
+  h4,p,small,strong{
+    line-height: 1.2rem;
+    margin:0;
+  }
+  hr{
+    border: 1px @gris-generico solid;
+  }
+
 }
 
-.box {
-  background-color: white;
-  border: 0.1rem solid #eee;
-  box-shadow: 2px 2px 4px 0 #f4f4f4;
-  margin:.2rem 0;
-  padding: 0.5rem;
+.btn-disabled{
+  background: gray;
+  border: none;
+  border-radius: .1rem;
+  box-shadow: 0px 2px 12px -4px rgba(0,0,0,.5);
+  color: darkgray;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem 0;
+  padding: .8rem 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
 }
+
 .custom_row {
   text-align: center;
-  width: 100%;
+  margin:.5rem;
+  .icon-generic,h4,.preciador{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
 }
 .col12,
 .col-8,
@@ -71,4 +197,57 @@ body {
 }
 .col-2 {
   width: 15%;
+}
+
+@media (max-width: 500px) {
+
+  h4{
+    color:@ladrillo;
+  }
+  .col-4{
+    min-width: unset;
+    width: 100%;
+  }
+  .s2{
+    margin-top: 122px;
+    .box{
+      margin: .5rem 0;
+      min-width: unset;
+      width: 95%;
+      padding-top: 0;
+      .head-product{
+        width: 100%;
+        .photo{
+          height:9rem;
+          margin: 0 0 .9rem 0;
+          overflow: hidden;
+          text-align: center;
+          width: 100%;
+        }
+        .photo img{
+          position: relative;
+          bottom: 8rem;
+          width: 100%;
+        }
+      }
+      .antes{
+        display: block;
+      }
+      .disp{
+        display: block;
+      }
+    }
+  }
+  .actions{
+    position: absolute;
+    left: 0;
+    margin: 0 .7rem;
+    top: 214px;
+    width: 96%;
+  }
+  .ticket-general{
+    position: static;
+  }
+
+
 }

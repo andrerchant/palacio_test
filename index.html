@@ -1,78 +1,103 @@
 <!DOCTYPE html>
 <html lang="es-mx" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Palacio test</title>
     <link rel="stylesheet" href="assets/css/totalmente.min.css">
   </head>
+
   <body>
+
     <header>
       <figure>
         <img src="assets/img/logotipo.png" alt="totalemten">
       </figure>
     </header>
+
     <section>
+
       <article class="s1 custom-row">
-        <div class="figure arrow-left"></div>
+        <div class="figure arrow-left"> &lt; </div>
         <h1>Revisión de pedidos</h1>
-        <div class="generic-icon"></div>
+        <div class="generic-icon">
+          <img src="assets/img/generico_icn.jpg">
+        </div>
       </article>
+
       <article class="s2 custom_row">
-        <div class="box col-6">
-          <div class="custom-row">
-            <figure>
-              <img src="" alt="">
+
+        <div class="box btn-h-plank col-6">
+          <div class="custom-row head-product">
+            <figure class="photo">
+              <img src="assets/img/producto.jpg" alt="Producto. Revisar">
             </figure>
+
             <div class="description">
-              <strong>Proveedor</strong>
-              <h4>Tiutlo producto</h4>
-              <small>código almacén</small>
+              <strong>Proveedor</strong><br>
+              <h4>Titulo producto</h4><br>
+              <small class="codigo">código almacén</small><br>
               <br>
-              <small>Cant</small><br>
-              <p>1</p>
+              <small><b>Cant.</b></small><br>
+              <input type="number" name="cantidad" value="1">
             </div>
             <div class="preciador">
+              <b class="antes">$ 345.00</b>
               <b>$ 289.00</b>
+              <small class="disp">Sujeto a disponibilidad</small>
             </div>
           </div>
           <hr>
+
           <div class="custom-row">
-            <figure class="icon-generic"></figure>
+            <figure class="icon-generic">
+              <img src="assets/img/subtotal_logo.jpg">
+            </figure>
             <h4>Subtotal</h4>
             <div class="preciador">
               <b>$ 289.00</b>
             </div>
           </div>
         </div>
+
         <div class="col-4">
-          <div class="box btn-h-plank">
-            <div class="generic-icon"></div>
-            <p>¿Dónde entregaremos?</p>
-            <div class="figure arrow-right"></div>
+
+          <div class="actions">
+            <div class="box btn-h-plank">
+              <div class="generic-icon">
+                <img src="assets/img/camion.svg" alt="Envío" width="45">
+              </div>
+              <p class="title_strong">¿Dónde entregaremos?</p>
+              <div class="figure arrow-right"></div>
+            </div>
+
+            <div class="box btn-h-plank">
+              <div class="generic-icon">
+                <img src="assets/img/tarjeta_icn.jpg" alt="Tipo de pago">
+              </div>
+              <p class="title_strong">¿Cómo deseas pagar?</p>
+              <div class="figure arrow-right"></div>
+            </div>
           </div>
-          <div class="box btn-h-plank">
-            <div class="generic-icon"></div>
-            <p>¿Cómo deseas pagar?</p>
-            <div class="figure arrow-right"></div>
-          </div>
+
           <div class="ticket-general">
             <div class="custom-row">
-              <small>Envío</small><span>...</span>
+              <small class="title_strong">Envío</small><span>...</span>
             </div>
             <div class="custom-row">
-              <small>Productos(1)</small><span>$ 119.00</span>
+              <small class="title_strong">Productos(1)</small><span>$ 119.00</span>
             </div>
             <div class="custom-row">
-              <p>Total</p><span>$ 119.00</span>
+              <p class="title_strong">Total</p><span>$ 119.00</span>
             </div>
           </div>
-          <div class="btn-h-plank inactive">
-            <p>Pagar</p>
-          </div>
+
+          <a href="#" class="btn-h-plank btn-disabled">Pagar</a>
+
           <br>
           <small class="legend">
-            Al completar tu pedido estarás aceptando los <strong>términos y condiciones de compra
-          </small> de El Palacio de Hierro.
+            Al completar tu pedido estarás aceptando los <strong>términos y condiciones de compra</strong> de El Palacio de Hierro.
+          </small>
         </div>
       </article>
     </section>
