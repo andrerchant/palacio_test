@@ -5,7 +5,8 @@
 }
 .selectable{
   cursor: pointer;
-  transition: transform ease-in 300ms,-webkit-transform ease-in 300ms;
+  transition: transform ease-in .2s,-webkit-transform ease-in .2s;
+  will-change: transform;
 }
 .selectable:hover{
   transform: translateX(.3rem);
