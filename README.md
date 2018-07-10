@@ -6,12 +6,12 @@ http://clientes.zerendipia.com/palacio_test01/
 
 Incluye lista modificable de productos.
 
-{
+{<br>
   nombre:'Nombre del producto',<br>
-  fabricante:'PROVEEDOR',
-  img:'path/to/imagen_almacenada',
-  calmacen:'clave67inventada156',
-  precio:[26279,40],//complicado innecesariamente
-  antes:[45999,00],//lo mismo
-  disponible:true // Muestra mensaje de disponibilidad
+  fabricante:'PROVEEDOR',<br>
+  img:'path/to/imagen_almacenada',<br>
+  calmacen:'clave67inventada156',<br>
+  precio:[26279,40],//complicado innecesariamente<br>
+  antes:[45999,00],//lo mismo<br>
+  disponible:true // Muestra mensaje de disponibilidad<br>
 },
