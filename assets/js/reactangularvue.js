@@ -50,8 +50,8 @@
 (function operacion(){
   var input = document.getElementsByTagName("input");
   for (var i = 0; i < input.length; i++) {
-    var productoPrecio=productos[i].precio[0];
     input[i].addEventListener('input', function (evt) {
+      var productoPrecio=productos[this.id.replace("f","")].precio[0];
       var total = document.getElementById("total");
       var subtotal = document.getElementById("subtotal");
       var preciador = document.getElementById(this.id.replace("f","p"));
